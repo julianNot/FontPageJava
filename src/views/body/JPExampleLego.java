@@ -19,14 +19,13 @@ public class JPExampleLego extends JPanel {
     private void initComponents() {
         addPageStart();
         addCenter();
-        addPageEnd();
     }
 
     private void addPageStart() {
         JPanel jpPageStart = new JPanel();
         jpPageStart.setLayout(new BoxLayout(jpPageStart, BoxLayout.X_AXIS));
         jpPageStart.setBackground(Color.decode("#FFFF00"));
-        //setPreferredSize(new Dimension(1349,91));
+        jpPageStart.setPreferredSize(new Dimension(1349,91));
 
         JLabel jbIconLego = new JLabel();
         jbIconLego.setBackground(null);
@@ -86,18 +85,29 @@ public class JPExampleLego extends JPanel {
         buttonShopingBall.setBackground(null);
         buttonShopingBall.setBorder(null);
         buttonShopingBall.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        buttonShopingBall.setBorder(BorderFactory.createEmptyBorder(0,0,0,20));
+        buttonShopingBall.setBorder(BorderFactory.createEmptyBorder(0,0,0,250));
         jpPageStart.add(buttonShopingBall);
 
-
-    }
-
-    private void addPageEnd() {
-        JPanel jpPageEnd = new JPanel();
+        this.add(jpPageStart, BorderLayout.PAGE_START);
     }
 
     private void addCenter() {
+
+        JPanel jpPageCenter = new JPanel();
+        jpPageCenter.setLayout(new BoxLayout(jpPageCenter, BoxLayout.X_AXIS));
+        jpPageCenter.setPreferredSize(new Dimension(1536,615));
+        jpPageCenter.setBackground(Color.black);
+
+        JLabel jlBannerLego = new JLabel();
+        jlBannerLego.setHorizontalTextPosition(JLabel.CENTER);
+        jlBannerLego.setVerticalAlignment(JLabel.BOTTOM);
+        jlBannerLego.setPreferredSize(new Dimension(1536,615));
+        jlBannerLego.setIcon(new ImageIcon(getClass().getResource(ConstantGUI.BANNER_LEGO)));
+        jlBannerLego.setBorder(null);
+        jpPageCenter.add(jlBannerLego);
+
+        this.add(jpPageCenter, BorderLayout.CENTER);
+
+
     }
-
-
 }

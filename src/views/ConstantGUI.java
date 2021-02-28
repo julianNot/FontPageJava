@@ -46,4 +46,5 @@ public class ConstantGUI {
     public static final String JBUTTON_LUPA = "/img/lupa.png";
     public static final String JBUTTON_USER = "/img/user.png";
     public static final String JBUTTON_SHOPPING_BALL = "/img/bolso.png";
+    public static final String BANNER_LEGO = "/img/404_lego.jpg";
 }
