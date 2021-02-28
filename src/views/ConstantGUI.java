@@ -53,10 +53,26 @@ public class ConstantGUI {
      */
     public static final String LOGO_PROFILE = "/img/Principal-logo.png";
     public static final String LOGO_BURGER = "/img/boton-burger.png";
+    public static final String BANNER_PROFILE = "/img/banner-profile.png";
     public static final String TEXT_BUTTON_WE_CREATE = "Creamos";
     public static final String TEXT_BUTTON_ESSENCE = "Nuestra esencia";
     public static final String TEXT_BUTTON_PEOPLES = "Personas";
     public static final String TEXT_BUTTON_BLOG = "Blog";
+
+    /**
+     * Elementos Recognition
+     */
+    public static final String LOGO_HEALTH = "/img/cuidado-de-la-salud.png";
+    public static final String LOGO_COMMUNITY = "/img/conversacion.png";
+    public static final String LOGO_SERVICE = "/img/servicio-al-cliente.png";
+    public static final String LOGO_SETTINGS = "/img/services.png";
+    public static final String LOGO_SEND = "/img/caja-de-entrega.png";
+    public static final String TEXT_HEALTH = "Salud";
+    public static final String TEXT_COMMUNITY = "Comunidad";
+    public static final String TEXT_SEND = "Enviar";
+    public static final String TEXT_SERVICE = "Atencion al cliente";
+    public static final String TEXT_SETTING = "Configuración";
+
 
 }
 

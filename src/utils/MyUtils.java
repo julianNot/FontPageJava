@@ -23,4 +23,8 @@ public class MyUtils {
         jButton.setBorder(null);
         jButton.setBorder(BorderFactory.createEmptyBorder(top,left,bottom,right));
     }
+
+    public static void setButton(){
+
+    }
 }
