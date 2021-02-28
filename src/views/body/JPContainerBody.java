@@ -7,6 +7,7 @@ public class JPContainerBody extends JPanel {
 
     private JDExampleDrive jpDrive;
     private JPExampleLego jpLego;
+    private JPExampleProfile jpProfile;
 
     public JPContainerBody(){
         setLayout(new BorderLayout());
@@ -16,6 +17,9 @@ public class JPContainerBody extends JPanel {
 
     private void initComponents() {
 
+        jpProfile = new JPExampleProfile();
+        //this.add(jpProfile, BorderLayout.CENTER);
+
         //jpDrive = new JPExampleDrive();
         //this.add(jpDrive, BorderLayout.CENTER);
 
@@ -23,7 +27,7 @@ public class JPContainerBody extends JPanel {
         //this.add(jpDrive,BorderLayout.CENTER);
 
         jpLego = new JPExampleLego();
-        this.add(jpLego,BorderLayout.CENTER);
+        //this.add(jpLego,BorderLayout.CENTER);
 
 
     }

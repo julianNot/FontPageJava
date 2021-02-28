@@ -47,4 +47,16 @@ public class ConstantGUI {
     public static final String JBUTTON_USER = "/img/user.png";
     public static final String JBUTTON_SHOPPING_BALL = "/img/bolso.png";
     public static final String BANNER_LEGO = "/img/404_lego.jpg";
+
+    /**
+     * Elementos Profile
+     */
+    public static final String LOGO_PROFILE = "/img/Principal-logo.png";
+    public static final String LOGO_BURGER = "/img/boton-burger.png";
+    public static final String TEXT_BUTTON_WE_CREATE = "Creamos";
+    public static final String TEXT_BUTTON_ESSENCE = "Nuestra esencia";
+    public static final String TEXT_BUTTON_PEOPLES = "Personas";
+    public static final String TEXT_BUTTON_BLOG = "Blog";
+
 }
+
