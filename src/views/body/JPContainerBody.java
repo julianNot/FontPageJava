@@ -27,7 +27,7 @@ public class JPContainerBody extends JPanel {
         //this.add(jpDrive,BorderLayout.CENTER);
 
         jpLego = new JPExampleLego();
-        //this.add(jpLego,BorderLayout.CENTER);
+        this.add(jpLego,BorderLayout.CENTER);
 
 
     }
