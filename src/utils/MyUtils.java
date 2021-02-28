@@ -1,5 +1,7 @@
 package utils;
 
+import views.ConstantGUI;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,5 +14,13 @@ public class MyUtils {
         buttonToChange.setForeground(Color.BLACK);
         buttonToChange.setBackground(null);
         buttonToChange.setBorder(null);
+    }
+
+    public static void setMainElementsButton(JButton jButton, ImageIcon imageIcon, int top, int left, int bottom, int right){
+        jButton.setBackground(null);
+        jButton.setIcon(imageIcon);
+        jButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        jButton.setBorder(null);
+        jButton.setBorder(BorderFactory.createEmptyBorder(top,left,bottom,right));
     }
 }
