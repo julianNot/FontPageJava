@@ -19,8 +19,8 @@ public class ConstantGUI {
     //TEXTO BOTONES
     public static final String TEXT_FIRST_BUTTON = "<html>Visibilidad del<br>estado del sistema</html>";
     public static final String TEXT_SECOND_BUTTON = "<html>Relación entre el sistema<br>y el mundo real</html>";
-    public static final String TEXT_THIRD_BUTTON = "<html>Control y libertad<br>del usuario</html>";
-    public static final String TEXT_FOURTH_BUTTON = "Prevención de errores";
+    public static final String TEXT_THIRD_LIBERTAD_USUARIO = "<html>Control y libertad<br>del usuario</html>";
+    public static final String TEXT_BUTTON_CONSISTENCIA = "Consistencia y estandares";
     public static final String TEXT_FIFTH_BUTTON = "Prevención de errores";
     public static final String TEXT_SIXTH_BUTTON = "<html>Reconocimiento antes<br>que recuerdo</html>";
     public static final String TEXT_SEVENTH_BUTTON = "<html> Flexibilidad y<br>eficiencia de uso</html>";
@@ -51,12 +51,24 @@ public class ConstantGUI {
     /**
      * Elementos Profile
      */
-    public static final String LOGO_PROFILE = "/img/Principal-logo.png";
+    public static final String LOGO_PROFILE = "/img/Principal-logo.PNG";
     public static final String LOGO_BURGER = "/img/boton-burger.png";
     public static final String TEXT_BUTTON_WE_CREATE = "Creamos";
     public static final String TEXT_BUTTON_ESSENCE = "Nuestra esencia";
     public static final String TEXT_BUTTON_PEOPLES = "Personas";
     public static final String TEXT_BUTTON_BLOG = "Blog";
 
+    //Elementos Iberia
+    public static final String LOGO_IBERIA = "/img/logo-iberia.png";
+    public static final String BANNER_IBERIA = "/img/banner_iberia.png";
+    public static final String BUTTON_WORLD = "/img/tierra.png";
+    public static final String BUTTON_PERSONAS = "/img/grupo.png";
+    public static final String BUTTON_HELP = "/img/informacion.png";
+    public static final String BUTTON_USER_IBERIA = "/img/silueta-de-usuario.png";
+
+    //Elementos Formulario contraseña
+    public static final String JLABEL_WARNING = "/img/advertencia_pw.png";
+    public static final String MESSAGE_NEW_PASSWORD = "Contraseña segura";
+    public static final String MESSAGE_REPIT_PASSWORD = "Este campo es obligatorio";
 }
 

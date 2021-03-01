@@ -55,7 +55,6 @@ public class JPExampleProfile extends JPanel {
         ImageIcon tempBurger = new ImageIcon(new ImageIcon(getClass().getResource(ConstantGUI.LOGO_BURGER)).getImage());
         MyUtils.setMainElementsButton(jbBurger,tempBurger,0,30,0,100);
         jpPageStart.add(jbBurger);
-
         add(jpPageStart);
     }
 

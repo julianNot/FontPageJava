@@ -10,7 +10,7 @@ public class JPModelButtons extends JButton {
     public JPModelButtons(String text, String Icon) {
         setText(text);
         setForeground(Color.BLACK);
-        setMaximumSize(new Dimension(460, 80));
+        //setMaximumSize(new Dimension(420, 80));
         setBackground(null);
         setIcon(new ImageIcon(new ImageIcon(getClass().getResource(Icon)).getImage().getScaledInstance(40, 40, Image.SCALE_SMOOTH)));
         setAlignmentX(Component.LEFT_ALIGNMENT);

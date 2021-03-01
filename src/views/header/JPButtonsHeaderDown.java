@@ -1,5 +1,7 @@
 package views.header;
 
+import presenter.EVENTS;
+import presenter.Presenter;
 import views.ConstantGUI;
 
 import javax.swing.*;
@@ -7,9 +9,11 @@ import java.awt.*;
 
 public class JPButtonsHeaderDown extends JPanel {
 
-    private JPModelButtons jbSixthButton,jbSeventhButton, jbEighthButton, jbNinthButton,jbTenthButton;
+    private JPModelButtons jbShowPanelReconocimiento, jbShowDialogLogIn, jbShowPanelMinimalist, jbShowDialogPassword, jbShowPanelIberia;
+    private Presenter myPresenter;
 
-    public JPButtonsHeaderDown(){
+    public JPButtonsHeaderDown(Presenter presenter){
+        myPresenter = presenter;
         setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
         setAlignmentX(LEFT_ALIGNMENT);
         setBackground(Color.WHITE);
@@ -22,20 +26,24 @@ public class JPButtonsHeaderDown extends JPanel {
 
     private void addButtonDown() {
 
-        jbSixthButton = new JPModelButtons(ConstantGUI.TEXT_SIXTH_BUTTON, ConstantGUI.BUTTON_RECONOCIMIENTO);
-        add(jbSixthButton);
+        jbShowPanelReconocimiento = new JPModelButtons(ConstantGUI.TEXT_SIXTH_BUTTON, ConstantGUI.BUTTON_RECONOCIMIENTO);
+        add(jbShowPanelReconocimiento);
 
-        jbSeventhButton= new JPModelButtons(ConstantGUI.TEXT_SEVENTH_BUTTON, ConstantGUI.BUTTON_FLEXIBILIDAD_USO);
-        add(jbSeventhButton);
+        jbShowDialogLogIn = new JPModelButtons(ConstantGUI.TEXT_SEVENTH_BUTTON, ConstantGUI.BUTTON_FLEXIBILIDAD_USO);
+        add(jbShowDialogLogIn);
 
-        jbEighthButton = new JPModelButtons(ConstantGUI.TEXT_EIGHTH_BUTTON, ConstantGUI.BUTTON_ESTETICA);
-        add(jbEighthButton);
+        jbShowPanelMinimalist = new JPModelButtons(ConstantGUI.TEXT_EIGHTH_BUTTON, ConstantGUI.BUTTON_ESTETICA);
+        add(jbShowPanelMinimalist);
 
-        jbNinthButton = new JPModelButtons(ConstantGUI.TEXT_NINTH_BUTTON, ConstantGUI.BUTTON_ADVERTENCIA);
-        add(jbNinthButton);
+        jbShowDialogPassword = new JPModelButtons(ConstantGUI.TEXT_NINTH_BUTTON, ConstantGUI.BUTTON_ADVERTENCIA);
+        jbShowDialogPassword.addActionListener(myPresenter);
+        jbShowDialogPassword.setActionCommand(EVENTS.C_RECUPERAR_ERRORES.toString());
+        add(jbShowDialogPassword);
 
-        jbTenthButton = new JPModelButtons(ConstantGUI.TEXT_TENTH_BUTTON, ConstantGUI.BUTTON_DOCUMENTACION);
-        add(jbTenthButton);
+        jbShowPanelIberia = new JPModelButtons(ConstantGUI.TEXT_TENTH_BUTTON, ConstantGUI.BUTTON_DOCUMENTACION);
+        jbShowPanelIberia.addActionListener(myPresenter);
+        jbShowPanelIberia.setActionCommand(EVENTS.C_DOCUMENTACION.toString());
+        add(jbShowPanelIberia);
 
     }
 }
