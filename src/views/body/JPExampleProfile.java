@@ -56,10 +56,25 @@ public class JPExampleProfile extends JPanel {
         MyUtils.setMainElementsButton(jbBurger,tempBurger,0,30,0,100);
         jpPageStart.add(jbBurger);
         add(jpPageStart);
+        
+        add(jpPageStart,BorderLayout.PAGE_START);
     }
 
     private void addCenter() {
-        
+        JPanel jpPage = new JPanel();
+        jpPage.setLayout(new BoxLayout(jpPage, BoxLayout.X_AXIS));
+        jpPage.setPreferredSize(new Dimension(1309,350));
+        //jpPage.setBackground(Color.black);
+
+        JLabel jlBannerLego = new JLabel();
+        jlBannerLego.setHorizontalTextPosition(JLabel.CENTER);
+        jlBannerLego.setVerticalAlignment(JLabel.BOTTOM);
+        jlBannerLego.setPreferredSize(new Dimension(1536,615));
+        jlBannerLego.setIcon(new ImageIcon(getClass().getResource(ConstantGUI.BANNER_PROFILE)));
+        jlBannerLego.setBorder(null);
+        jpPage.add(jlBannerLego);
+
+        add(jpPage);
     }
 
 }

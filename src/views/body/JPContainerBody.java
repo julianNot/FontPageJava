@@ -8,7 +8,10 @@ public class JPContainerBody extends JPanel {
     private JDExampleDrive jpDrive;
     private JPExampleLego jpLego;
     private JPExampleProfile jpProfile;
+
     private JPExampleIberia jpIberia;
+
+    private JPExampleRecognition jpRecognition;
 
     public JPContainerBody(){
         setLayout(new BorderLayout());
@@ -20,8 +23,11 @@ public class JPContainerBody extends JPanel {
 
         jpLego = new JPExampleLego();
         jpProfile = new JPExampleProfile();
+
         jpIberia = new JPExampleIberia();
     }
+
+        //this.add(jpProfile, BorderLayout.CENTER);
 
     public void showPanelLego(){
         this.removeAll();

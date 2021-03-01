@@ -34,7 +34,7 @@ public class MyUtils {
         button.setBorder(null);
     }
     
-    public static void setTextAndJLabel(JLabel jlabel,String text, ImageIcon logo){
+    public static void setTextAndJLabel(JLabel jlabel,String text, ImageIcon logo) {
         jlabel.setText(text);
         jlabel.setFont(new Font("Arial", Font.PLAIN, 15));
         jlabel.setForeground(Color.BLACK);
@@ -43,5 +43,6 @@ public class MyUtils {
         jlabel.setIcon(logo);
         //jlabel.setAlignmentX(Component.LEFT_ALIGNMENT);
         jlabel.setBorder(null);
+
     }
 }
