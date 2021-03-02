@@ -33,6 +33,21 @@ public class Presenter implements ActionListener {
             case C_RECUPERAR_ERRORES:
                 new JDPasswordForm();
                 break;
+            case C_CONTROL_Y_LIBERTAD_USUARIO:
+                mainWindow.showPanelGmail();
+                break;
+            case C_PREVENCION_ERRORES:
+                mainWindow.showPanelGoogle();
+                break;
+            case C_RECONOCIMIENTO:
+                mainWindow.showPanelRecognition();
+                break;
+            case C_FLEXIBILIDAD:
+                mainWindow.showPanelAdvancedSettings();
+                break;
+            case  C_ESTETICA:
+                mainWindow.showPanelMinimalist();
+                break;
         }
     }
 }

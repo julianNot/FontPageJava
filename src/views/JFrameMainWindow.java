@@ -44,4 +44,22 @@ public class JFrameMainWindow extends JFrame {
         jpMainPanel.showPanelIberia();
 
     }
+    public void showPanelGmail(){
+        jpMainPanel.showPanelGmail();
+    }
+
+    public void showPanelGoogle(){
+        jpMainPanel.showPanelGoogle();
+    }
+    public void showPanelRecognition(){
+        jpMainPanel.showPanelRecognition();
+    }
+    public void showPanelAdvancedSettings(){
+        jpMainPanel.showPanelAdvancedSettings();
+    }
+    public void showPanelMinimalist(){
+        jpMainPanel.showPanelMinimalist();
+    }
+
+
 }

@@ -88,5 +88,10 @@ public class ConstantGUI {
     public static final String TEXT_SETTING = "Configuración";
 
 
+    public static final String BANNER_GMAIL = "/img/ejemplo_gmail.png";
+    public static final String BANNER_GOOGLE = "/img/buscador_google.png";
+    public static final String BANNER_ADVANCED_SETTINGS = "/img/inicio_sesion_avanzada.jpg";
+    public static final String BANNER_MINIMALIST = "/img/minimalist.png";
+    public static final String BANNER_IBERIA_DOC = "/img/screen_iberia.png";
 }
 

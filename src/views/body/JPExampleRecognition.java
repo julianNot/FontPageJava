@@ -66,12 +66,6 @@ public class JPExampleRecognition extends JPanel {
         jSettings.setVerticalTextPosition( SwingConstants.BOTTOM );
         jpPageStart.add(jSettings);
 
-
-
-
-
-
-
         add(jpPageStart);
     }
 }

@@ -40,4 +40,20 @@ public class JPMainPanel extends JPanel {
         jpcontainerBody.showPanelIberia();
 
     }
+
+    public void showPanelGmail(){
+        jpcontainerBody.showPanelGmail();
+    }
+    public void showPanelGoogle(){
+       jpcontainerBody.showPanelGoogle();
+    }
+    public void showPanelRecognition(){
+        jpcontainerBody.showPanelRecognition();
+    }
+    public void showPanelAdvancedSettings(){
+        jpcontainerBody.showPanelAdvancedSettings();
+    }
+    public void showPanelMinimalist(){
+        jpcontainerBody.showPanelMinimalist();
+    }
 }

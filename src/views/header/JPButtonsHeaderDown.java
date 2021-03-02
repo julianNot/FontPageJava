@@ -27,12 +27,18 @@ public class JPButtonsHeaderDown extends JPanel {
     private void addButtonDown() {
 
         jbShowPanelReconocimiento = new JPModelButtons(ConstantGUI.TEXT_SIXTH_BUTTON, ConstantGUI.BUTTON_RECONOCIMIENTO);
+        jbShowPanelReconocimiento.addActionListener(myPresenter);
+        jbShowPanelReconocimiento.setActionCommand(EVENTS.C_RECONOCIMIENTO.toString());
         add(jbShowPanelReconocimiento);
 
         jbShowDialogLogIn = new JPModelButtons(ConstantGUI.TEXT_SEVENTH_BUTTON, ConstantGUI.BUTTON_FLEXIBILIDAD_USO);
+        jbShowDialogLogIn.addActionListener(myPresenter);
+        jbShowDialogLogIn.setActionCommand(EVENTS.C_FLEXIBILIDAD.toString());
         add(jbShowDialogLogIn);
 
         jbShowPanelMinimalist = new JPModelButtons(ConstantGUI.TEXT_EIGHTH_BUTTON, ConstantGUI.BUTTON_ESTETICA);
+        jbShowPanelMinimalist.addActionListener(myPresenter);
+        jbShowPanelMinimalist.setActionCommand(EVENTS.C_ESTETICA.toString());
         add(jbShowPanelMinimalist);
 
         jbShowDialogPassword = new JPModelButtons(ConstantGUI.TEXT_NINTH_BUTTON, ConstantGUI.BUTTON_ADVERTENCIA);

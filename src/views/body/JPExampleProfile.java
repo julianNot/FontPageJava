@@ -32,7 +32,7 @@ public class JPExampleProfile extends JPanel {
 
         JButton jbIconProfile = new JButton();
         ImageIcon temp = new ImageIcon(new ImageIcon(getClass().getResource(ConstantGUI.LOGO_PROFILE)).getImage());
-        MyUtils.setMainElementsButton(jbIconProfile,temp,0,180,0,150);
+        MyUtils.setMainElementsButton(jbIconProfile,temp,0,50,20,300);
         jpPageStart.add(jbIconProfile);
 
         JButton jbWeCreates = new JButton(ConstantGUI.TEXT_BUTTON_WE_CREATE);
@@ -53,10 +53,10 @@ public class JPExampleProfile extends JPanel {
 
         JButton jbBurger = new JButton();
         ImageIcon tempBurger = new ImageIcon(new ImageIcon(getClass().getResource(ConstantGUI.LOGO_BURGER)).getImage());
-        MyUtils.setMainElementsButton(jbBurger,tempBurger,0,30,0,100);
+        MyUtils.setMainElementsButton(jbBurger,tempBurger,0,30,0,10);
         jpPageStart.add(jbBurger);
         add(jpPageStart);
-        
+
         add(jpPageStart,BorderLayout.PAGE_START);
     }
 

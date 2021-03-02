@@ -39,6 +39,8 @@ public class JPButtonsHeaderUP extends JPanel {
         add(jbShowPanelLego);
 
         jbShowPanelGmail = new JPModelButtons(ConstantGUI.TEXT_THIRD_LIBERTAD_USUARIO, ConstantGUI.BUTTON_LIBERTAD_USUARIO);
+        jbShowPanelGmail.addActionListener(myPresenter);
+        jbShowPanelGmail.setActionCommand(EVENTS.C_CONTROL_Y_LIBERTAD_USUARIO.toString());
         add(jbShowPanelGmail);
 
         jbShowPanelProfile = new JPModelButtons(ConstantGUI.TEXT_BUTTON_CONSISTENCIA, ConstantGUI.BUTTON_COHERENCIA);
@@ -47,6 +49,8 @@ public class JPButtonsHeaderUP extends JPanel {
         add(jbShowPanelProfile);
 
         jbShowPanelSearchGoogle = new JPModelButtons(ConstantGUI.TEXT_FIFTH_BUTTON, ConstantGUI.BUTTON_PREVENCION_ERRORES);
+        jbShowPanelSearchGoogle.addActionListener(myPresenter);
+        jbShowPanelSearchGoogle.setActionCommand(EVENTS.C_PREVENCION_ERRORES.toString());
         add(jbShowPanelSearchGoogle);
     }
 }

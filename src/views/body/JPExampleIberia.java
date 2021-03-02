@@ -63,12 +63,12 @@ public class JPExampleIberia extends JPanel {
     }
 
     private void addCenter() {
-        JPanel jPanelBodyIberia = new JPanel(new BorderLayout());
-
-        JPanel jpHelpDoc = new JPanel(new GridLayout(1,3));
-
-
-
-
+        JLabel jlExampleIberia = new JLabel();
+        jlExampleIberia.setHorizontalTextPosition(JLabel.CENTER);
+        jlExampleIberia.setVerticalAlignment(JLabel.BOTTOM);
+        jlExampleIberia.setPreferredSize(new Dimension(1347,578));
+        jlExampleIberia.setIcon(new ImageIcon(getClass().getResource(ConstantGUI.BANNER_IBERIA_DOC)));
+        jlExampleIberia.setBorder(null);
+        add(jlExampleIberia,BorderLayout.CENTER);
     }
 }
